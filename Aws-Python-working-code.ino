@@ -6,7 +6,7 @@
 const char* ssid = "KavinArul";
 const char* password = "arulkavin";
 const char* bucketURL = "https://s3.ap-south-1.amazonaws.com/testsample.192/zip+file.zip";  /
-#define SD_CS_PIN 16  // Define CS pin for SD card
+#define SD_CS_PIN 16  
 
 void setup() {
   Serial.begin(115200); 
