@@ -4,19 +4,19 @@ import re
 import time
 
 def is_irrelevant_message(line):
-    # Define keywords or patterns that are considered irrelevant
+
     irrelevant_keywords = [
         'load:', 'Connecting to WiFi', 'Connected to WiFi',
         'Response:', 'Latest file found:', 'File URL:', 'File saved to SD card successfully'
     ]
     
-    # Check if the line contains any of the irrelevant keywords
+    
     return any(keyword in line for keyword in irrelevant_keywords)
 
 def receive_zip_file(port, baudrate, output_path):
     output_dir = os.path.dirname(output_path)
 
-    # Ensure the output directory exists
+    
     if not os.path.exists(output_dir):
         print(f"Directory does not exist: {output_dir}")
         return
